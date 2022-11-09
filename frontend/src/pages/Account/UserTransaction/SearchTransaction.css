@@ -1,0 +1,22 @@
+.SearchTransactionList {
+    position:absolute;
+    top:150px;
+    left:200px;
+    display:block;
+    margin-bottom:80px;
+    width:1000px;
+    height:500px;
+    background: rgba(154, 155, 156, 0.7);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+ .SearchBar {
+    position:absolute;
+    left:200px;
+    display:block;
+    margin-bottom:80px;
+    width:9000px;
+    border-radius:5px;
+    overflow:hidden;
+ }

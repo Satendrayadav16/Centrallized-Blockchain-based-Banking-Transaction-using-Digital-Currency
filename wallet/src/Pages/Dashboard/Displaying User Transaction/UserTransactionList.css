@@ -1,0 +1,53 @@
+
+.Explorer-TransactionList {
+    position: absolute;
+    top: -130px;
+    left: 200px;
+    height: 400px;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto 10px auto;
+   
+}
+ 
+.TransactionList:hover{
+    opacity: 1;
+    box-shadow: 5px 5px black;
+}
+.style-table-TransactionList {
+    border-collapse: collapse;
+    margin:auto;
+    font-size: 1 rem;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0,   0, 0, 0.15);
+}
+
+.styled-table-TransactionList thead tr {
+    background-color: #f5f7f6;
+    color: black;
+    text-align: left;
+}
+
+.styled-table-TransactionList th,
+.styled-table-TransactionList td {
+    padding: 12px 15px;
+}
+
+.styled-table-TransactionList tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-TransactionList tbody tr:nth-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.TransactionListData {
+    white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

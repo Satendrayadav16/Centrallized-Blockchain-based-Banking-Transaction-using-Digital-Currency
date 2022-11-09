@@ -1,0 +1,41 @@
+.auth-login{
+  text-align: left;
+  padding: 20px 10px;
+
+}
+
+.auth-login form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto 10px auto;
+}
+
+.auth__success{
+  padding: 10px 0;
+  background-color: hsl(147, 79%, 87%);
+  margin-bottom: 20px;
+}
+
+.auth__error-login{
+  padding: 10px 0;
+  background-color: hsl(0, 79%, 87%);
+  margin-bottom: 20px;
+}
+
+.auth-login form > input, button{
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.login-center {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  background-color: white;
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+}

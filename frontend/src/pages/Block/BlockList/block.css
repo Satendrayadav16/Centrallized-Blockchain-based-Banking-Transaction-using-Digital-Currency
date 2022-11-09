@@ -1,0 +1,54 @@
+
+.BlockList {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    height: 500px;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    margin: 20px;
+    display: block;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+   
+}
+ 
+.BlockList:hover{
+    opacity: 1;
+    box-shadow: 5px 5px black;
+}
+.style-table-BlockList {
+    border-collapse: collapse;
+    margin:auto;
+    font-size: 0.6em;
+    font-family: sans-serif;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0,   0, 0, 0.15);
+}
+
+.styled-table-BlockList thead tr {
+    background-color: #f5f7f6;
+    color: black;
+    text-align: left;
+}
+
+.styled-table-BlockList th,
+.styled-table-BlockList td {
+    padding: 12px 15px;
+}
+
+.styled-table-BlockList tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-BlockList tbody tr:nth-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.container-Block {
+    background-color: rgb(148, 169, 187);
+
+}

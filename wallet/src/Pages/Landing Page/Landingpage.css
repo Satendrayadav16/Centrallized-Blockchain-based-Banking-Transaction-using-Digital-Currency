@@ -1,0 +1,38 @@
+.Landing-Page {
+    background-color: #292929;
+}
+
+.button-Register {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: #292929;
+  color: rgb(255, 255, 255);
+  width: 10%;
+  border: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-login {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  background-color: #292929;
+  color: rgb(255, 255, 255);
+  width: 10%;
+  border: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+

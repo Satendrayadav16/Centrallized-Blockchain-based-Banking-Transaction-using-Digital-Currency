@@ -1,0 +1,39 @@
+.container-blocktransaction {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+
+.card-blocktransaction {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    height: relative;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    display: block;
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.card-header-blocktransaction {
+    height: 30%;
+    background: #5d6770;
+    color: white;
+    text-align: center;
+}
+
+.card-header-blocktransaction p {
+    font-size:  20px;
+}
+
+.card-header-blocktransaction-label {
+    text-align: center;
+}

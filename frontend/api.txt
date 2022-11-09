@@ -1,0 +1,25 @@
+> Calculate size of block (transaction size) in block/mineblock.
+
+> Services Till Now
+
+/blocks - get -  get all blocks from blockchain
+/UA - get - get all unVerifiedAccountList
+/ABC - post - get account by citizenshipNumber
+/ABA - post - get Account by Account Address
+/VA - get - get all verifiedAccount
+/bal - post - get balance for respective account
+/GVA - get - Get Verified Accounts
+/ - get - home
+/MIT - post - initial transaction
+/CA - post - create Account
+/SM - post - send Money
+/ITP - get - initial transaction pool
+/TP - get - transaction pool transactions
+/mine - get - mineBlock
+/gt - post - get transactions by address
+/pst - post - pending transactions of particular address
+/getAllTransactions - get - get All Transactions
+/getTransactionByHash - post - get transaction by hash
+/getBlockHash - post - get block by hash
+/getBlockByHeight - post - get block by block height
+/getTotalAmountCirculating - get - get all the amounts being circulated in the system

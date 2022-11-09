@@ -1,0 +1,33 @@
+
+.BankTransactionDetails {
+    position: absolute;
+    top: 380px;
+    left: 250px;
+    height: 250px;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    margin: 20px;
+    display: block;
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.TotalCoins {
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    height: 250px;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    margin: 20px;
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+

@@ -1,0 +1,201 @@
+.Dashboard {
+  max-width: 70rem;
+  margin: 2rem auto;
+  flex: auto;
+  
+}
+
+.DashboardUserProfile {
+  position: absolute;
+  top: 270px;
+  left: 50px;
+  height: 150px;
+  background: #f5f7f6;
+  border: 2px solid black;
+  box-shadow: 5px 5px;
+  margin: 20px;
+  display: block;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  flex: auto;
+
+}
+
+
+
+.UserBalance-Details {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  height: 350px;
+  background: #f5f7f6;
+  border: 2px solid black;
+  box-shadow: 5px 5px;
+  margin: 20px;
+  display: block;
+  width: 1400px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  text-align: center;
+  flex: auto;
+
+}
+.Send-Money-button {
+  position: absolute;
+  top: 350px;
+  right: 600px;
+  background-color: #F5F7F6;
+ 
+}
+
+.Logout_buuton {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: #292929;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  border: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  flex: auto;
+}
+
+.Transaction-List-History {
+  position: absolute;
+  top: 450px;
+  left: 20px;
+  height: 1px;
+  background: balck;
+  border: 2px solid black;
+  margin: 20px;
+  display: block;
+  width: 1450px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  text-align: center;
+  font-size: 1 rem;
+
+}
+
+.Email-label {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  z-index: 2;
+}
+
+.Address-label {
+ 
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 2;
+}
+
+.Address-hash {
+ 
+  position: absolute;
+  top: 105px;
+  left: 190px;
+  z-index: 2;
+}
+
+.display-Coin {
+  position: absolute;
+  top: 200px;
+  left: 720px;
+  z-index: 2;
+  width: relative;
+  background: #f5f7f6;
+  border: 2px solid black;
+  box-shadow: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 5px;
+  padding: 5px 20px;
+}
+
+.display-Coin-label {
+  position: absolute;
+  top: 150px;
+  left: 720px;
+  z-index: 2;
+}
+
+
+
+.Explorer-TransactionList {
+  position: absolute;
+  top: -130px;
+  left: 200px;
+  height: 400px;
+  background: #f5f7f6;
+  border: 2px solid black;
+  box-shadow: 5px 5px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto 10px auto;
+  font-size: 1 rem;
+ 
+}
+
+.TransactionList:hover{
+  opacity: 1;
+  box-shadow: 5px 5px black;
+}
+.style-table-TransactionList {
+  border-collapse: collapse;
+  margin:auto;
+  font-size: 1 rem;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0,   0, 0, 0.15);
+}
+
+.styled-table-TransactionList thead tr {
+  background-color: #f5f7f6;
+  color: black;
+  text-align: left;
+  font-size: 1 rem;
+}
+
+.styled-table-TransactionList th,
+.styled-table-TransactionList td {
+  padding: 12px 15px;
+}
+
+.styled-table-TransactionList tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-TransactionList tbody tr:nth-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.TransactionListData {
+  white-space: wrap;
+overflow: hidden;
+text-overflow: ellipsis;
+font-size: 1 rem;
+
+}
+

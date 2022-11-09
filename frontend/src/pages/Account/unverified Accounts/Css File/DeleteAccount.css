@@ -1,0 +1,45 @@
+.Delete-header-userdetails {
+    height: 12%;
+    background: #5d6770;
+    color: white;
+    text-align: center;
+}
+
+  
+
+
+.Delete-card-transactiondetails {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    height: 200px;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    display: block;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+}
+
+
+.Delete-button-transactiondetails {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    background-color: #b0b5b6;
+    border: black;
+    color: black;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+
+.Delete-header-transactiondetails {
+    text-align: center;
+}

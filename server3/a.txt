@@ -1,0 +1,66 @@
+
+user1
+{
+"puKey": "040a91c8bb83cfa1f0f7a1dcf3b722d70fdf25b538fe67725987d817199ac18042f8451212fabb38f3dbc25186f9a20dc555f8c7363cfa9f46b85bdcbbe704162f",
+"priKey": "40bfe0ee6a1e9f644aec60c79019d2319ff8025b08dd1ad79542e3205538e49c",
+"name": "Ram Nepal",
+"citizenshipNumber":"2042-02-13"
+}
+
+
+user 2
+
+{
+"puKey": "049028f154b124f8f6122229358173c231210b4920584f8c5cb7b72d086fe9cd7e0e906e55c8e71714676a0245c184be8174664083a4c01d3096b6188fc845bc00",
+"priKey": "3fb4b0847e1755cf8ff77e11638ce0c4efb34515c90ac645bd18fbfb8919677e",
+"name": "Vitalik Buterin",
+"citizenshipNumber":"2051-10-21"
+}
+
+
+MIT
+{
+"receiver":"049028f154b124f8f6122229358173c231210b4920584f8c5cb7b72d086fe9cd7e0e906e55c8e71714676a0245c184be8174664083a4c01d3096b6188fc845bc00",
+"amount":50000
+}
+
+
+sendMoney
+{
+"sender":"049028f154b124f8f6122229358173c231210b4920584f8c5cb7b72d086fe9cd7e0e906e55c8e71714676a0245c184be8174664083a4c01d3096b6188fc845bc00",
+"priKey":"3fb4b0847e1755cf8ff77e11638ce0c4efb34515c90ac645bd18fbfb8919677e",
+"receiver":"040a91c8bb83cfa1f0f7a1dcf3b722d70fdf25b538fe67725987d817199ac18042f8451212fabb38f3dbc25186f9a20dc555f8c7363cfa9f46b85bdcbbe704162f",
+"amount":20000,
+"remarks":"Loan Payment"
+}
+
+
+
+let tempTransaction = [
+        {
+            "id": "d4d3d8f0337f11ed877aed1cea93021c",
+            "input": {
+                "timestamp": 1663085964287,
+                "amount": 50000,
+                "sender": "04eea9237e54cd2a0ede29a37a3865dc0685ccad6d04415b720b4ee2bed74577118b86223d2365ba9f5c5745d275668e5c836e17f48a12a5ccd951889fa46e813a",
+                "signature": {
+                    "r": "5525a074ecb017f1c09ed3ffe479769b4c9fdb9aeb7a630ae358a1bb363c1709",
+                    "s": "a827a02c26316dfa1ee5fc11dca265d8d7b0504dbe2b1df70c9bca2c424bc42f",
+                    "recoveryParam": 1
+                }
+            },
+            "outputs": [
+                {
+                    "amount": 0,
+                    "address": "04eea9237e54cd2a0ede29a37a3865dc0685ccad6d04415b720b4ee2bed74577118b86223d2365ba9f5c5745d275668e5c836e17f48a12a5ccd951889fa46e813a"
+                },
+                {
+                    "amount": 50000,
+                    "address": "049028f154b124f8f6122229358173c231210b4920584f8c5cb7b72d086fe9cd7e0e906e55c8e71714676a0245c184be8174664083a4c01d3096b6188fc845bc00"
+                }
+            ],
+            "remark": "This is transaction by Bank",
+            "hash": "82ba233aac14648af2fa1ac560b0f058913b4164779fafffc905a556ac6d3053",
+            "blockNumber": 0
+        }
+    ]

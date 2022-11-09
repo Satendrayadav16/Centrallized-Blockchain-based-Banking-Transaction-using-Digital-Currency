@@ -1,0 +1,40 @@
+{
+  "name": "cbdc",
+  "version": "1.0.0",
+  "description": "This Central Bank Digital Currency project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon ./app",
+    "test": "jest --watchAll",
+    "dev-test": "jest --watch chain.test.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockchain-Based-Banking-Transactions/CBDC.git"
+  },
+  "author": "Team SAYS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blockchain-Based-Banking-Transactions/CBDC/issues"
+  },
+  "homepage": "https://github.com/Blockchain-Based-Banking-Transactions/CBDC#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "etcd3": "^1.1.0",
+    "express": "^4.18.1",
+    "jest": "^29.0.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.19",
+    "object-sizeof": "^1.6.3",
+    "uuid": "^8.3.2"
+  },
+  "keywords": []
+}

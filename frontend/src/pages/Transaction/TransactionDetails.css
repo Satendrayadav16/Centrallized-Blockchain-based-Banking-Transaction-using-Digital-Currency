@@ -1,0 +1,57 @@
+.container-transactiondetails {
+    z-index: 1;
+    width: 100%;
+    height: relative;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-transactiondetails {
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    height: relative;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    display: block;
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+}
+
+.card-header-transactiondetails {
+    position: absolute;
+    top: -90px;
+    left: 200px;
+    width: 250px;
+    background: #5d6770;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-header-transactiondetails p {
+    font-size:  20px;
+}
+
+.button-transactiondetails {
+    background-color: #b0b5b6;
+    border: black;
+    color: black;
+    width: 10%;
+    height: 7%;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+

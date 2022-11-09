@@ -1,0 +1,9 @@
+.coin-metrics {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.totalAmountLabel {
+    align-items: centers;
+}

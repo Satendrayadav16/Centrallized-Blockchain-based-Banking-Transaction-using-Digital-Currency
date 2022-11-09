@@ -1,0 +1,70 @@
+> Calculate size of block (transaction size) in block/mineblock.
+
+> Services Till Now
+
+/blocks - get -  get all blocks from blockchain
+/UA - get - get all unVerifiedAccountList
+/ABC - post - get account by citizenshipNumber
+/ABA - post - get Account by Account Address
+/VA - get - get all verifiedAccount
+/bal - post - get balance for respective account
+/GVA - get - Get Verified Accounts
+/ - get - home
+/MIT - post - initial transaction
+/CA - post - create Account
+/SM - post - send Money
+/ITP - get - initial transaction pool
+/TP - get - transaction pool transactions
+/mine - get - mineBlock
+/gt - post - get transactions by address
+/pst - post - pending transactions of particular address
+/getAllTransactions - get - get All Transactions
+/getTransactionByHash - post - get transaction by hash
+/getBlockHash - post - get block by hash
+/getBlockByHeight - post - get block by block height
+/getTotalAmountCirculating - get - get all the amounts being circulated in the system
+/removeAccountCreationRequest - post - remove particular account from unverified account list
+/getAllAccount - get - get all accounts in blockchain
+/getUnverifiedAccountByAddress - post - finds and returns the account in unverifiedAccount
+
+
+
+export ETCDCTL_API=3
+HOST_1=192.168.1.75
+HOST_2=192.168.1.73
+ENDPOINTS=$HOST_1=2380,$HOST_2=2380
+
+
+etcd --name infra0 --initial-advertise-peer-urls http://192.168.1.75:2380 \
+--listen-peer-urls http://192.168.1.75:2380 \
+  --listen-client-urls http://192.168.1.75:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls http://192.168.1.75:2379 \
+--initial-cluster-token etcd-cluster-1 \
+--initial-cluster infra0=http://192.168.1.75:2380,infra1=http://192.168.1.66:2380 \
+
+etcdctl --endpoints=$ENDPOINTS endpoint status
+etcdctl --endpoints=$ENDPOINTS endpoint health
+
+etcdctl --write-out=table --endpoints=$ENDPOINTS endpoint status
+
+etcdctl --endpoints=$ENDPOINTS get blockchain
+
+
+
+sudo lsof -i -P -n | grep LISTEN
+sudo kill `sudo lsof -t -i:2380`
+
+etcd --name infra1 --initial-advertise-peer-urls http://192.168.167.47:2380 \
+  --listen-peer-urls http://192.168.167.47:2380 \
+  --listen-client-urls http://192.168.167.47:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls http://192.168.167.47:2379 \
+  --initial-cluster-token etcd-cluster-2 \
+  --initial-cluster infra0=http://192.168.167.96:2380,infra1=http://192.168.167.47:2380
+
+etcd --name infra0 --initial-advertise-peer-urls http://192.168.1.75:2380 \
+  --listen-peer-urls http://192.168.1.75:2380 \
+  --listen-client-urls http://192.168.1.75:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls http://192.168.1.75:2379 \
+  --initial-cluster-token etcd-cluster-1 \
+  --initial-cluster infra0=http://192.168.1.75:2380,infra1=http://192.168.1.73:2380 \
+  --initial-cluster-state new

@@ -1,0 +1,34 @@
+export ETCDCTL_API=3
+HOST_1=172.16.2.141
+HOST_2=172.16.2.98
+HOST_3=172.16.2.99
+ENDPOINTS=$HOST_1:2380,$HOST_2:2380,$HOST_3:2380
+
+
+
+
+etcd --name server2 --initial-advertise-peer-urls http://172.16.2.99:2380 \
+  --listen-peer-urls http://172.16.2.99:2380 \
+  --listen-client-urls http://172.16.2.99:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls http://172.16.2.99:2379 \
+  --initial-cluster-token etcd-cluster-1 \
+  --initial-cluster server0=http://172.16.2.141:2380,server1=http://172.16.2.98:2380,server2=http://172.16.2.99:2380
+
+
+etcd --name server2 --initial-advertise-peer-urls http://192.168.1.67:2380 \
+  --listen-peer-urls http://192.168.1.67:2380 \
+  --listen-client-urls http://192.168.1.67:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls http://192.168.1.67:2379 \
+  --initial-cluster-token etcd-cluster-1 \
+  --initial-cluster server0=http://192.168.1.75:2380,server1=http://192.168.1.65:2380,server2=http://192.168.1.67:2380
+
+
+
+etcdctl --endpoints=$ENDPOINTS endpoint status
+
+etcdctl --endpoints=$ENDPOINTS endpoint health
+
+etcdctl --write-out=table --endpoints=$ENDPOINTS endpoint status
+
+etcdctl --endpoints=$ENDPOINTS put foo 'this is onsdhf'
+etcdctl --endpoints=$ENDPOINTS get foo

@@ -1,0 +1,89 @@
+input[type="text"],
+input[type="number"],
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.TransactionDetails{
+    padding:5px;
+    font-weight:lighter;
+    color:#ffffff;
+    margin: .5rem ;
+}
+
+.MakeTransaction{
+    position:Left;
+    top:50px;
+    left:35%;
+    display:block;
+    margin-bottom:80px;
+    width:500px;
+    height:650px;
+    background: rgb(16  35  69 / 70% );
+    border-radius:5px;
+    overflow:hidden;
+    z-index:1;
+}
+
+.transactioninfo{
+    height:62px;
+    width:90%;
+    margin:0 auto;
+    border:none;
+    background: rgb(74, 123, 221);
+}
+
+.transactioninfo::placeholder{
+    -webkit-transform:translateY(0px);
+      transform:translateY(0px);
+      /* -webkit-transform:translateX(10px);
+      transform:translateX(10px); */
+    -webkit-transition:.5s;
+      transition:.5s;
+      padding: 0px 10px;
+  }
+  .transactioninfo:hover,
+  .transactioninfo:focus,
+  .transactioninfo:active:focus{
+    color:#ff5722;
+    outline:none;
+    border-bottom:1px solid #ff5722;
+  }
+  .transactioninfo:hover::placeholder,
+  .transactioninfo:focus::placeholder,
+    .transactioninfo:active:focus::placeholder{
+      color:#ff5722;
+      position:relative;
+      -webkit-transform:translateY(-10px);
+      transform:translateY(-10px);
+      
+    }
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #0b71ed;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type = "submit"]:hover {
+    background-color: #45a049;
+}
+
+.FormLabel{
+    padding:10px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#ffffff;
+    margin: .5rem 10rem;
+}

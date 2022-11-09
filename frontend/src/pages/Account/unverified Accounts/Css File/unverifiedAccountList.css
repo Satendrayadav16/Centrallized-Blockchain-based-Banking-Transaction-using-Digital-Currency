@@ -1,0 +1,57 @@
+.UnverifiedAccountList{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    height: 300px;
+    background: #f5f7f6;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    margin: 20px;
+    display: block;
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+   
+}
+
+.UnverifiedAccountListheader {
+    text-align: center;
+}
+.UnverifiedAccountList:hover{
+    opacity: 1;
+    box-shadow: 5px 5px black;
+}
+.style-table-UnverifiedAccountList {
+    border-collapse: collapse;
+    margin:auto;
+    font-size: 0.6em;
+    font-family: sans-serif;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0,   0, 0, 0.15);
+}
+
+.styled-table-UnverifiedAccountList thead tr {
+    background-color: #f5f7f6;
+    color: black;
+    text-align: left;
+}
+
+.styled-table-UnverifiedAccountList th,
+.styled-table-UnverifiedAccountList td {
+    padding: 12px 15px;
+}
+
+.styled-table-UnverifiedAccountList tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-UnverifiedAccountList tbody tr:nth-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.UnverifiedAccountListData {
+    white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
